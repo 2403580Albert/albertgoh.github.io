@@ -1,0 +1,324 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff;
+  color: #333;
+  padding: 40px 20px;
+  line-height: 1.6;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* ---------- Header ---------- */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+header p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* ---------- Project Grid for Home Page ---------- */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.project-card {
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: contain;
+  display: block;
+}
+
+.project-info {
+  padding: 20px;
+}
+
+.project-info h2 {
+  font-size: 1.25rem;
+  margin-bottom: 6px;
+}
+
+.project-info .date {
+  font-size: 0.85rem;
+  color: #999;
+  margin-bottom: 12px;
+}
+
+.tags {
+  margin-bottom: 12px;
+}
+
+.tag {
+  display: inline-block;
+  background: #eee;
+  color: #444;
+  font-size: 0.75rem;
+  border-radius: 5px;
+  padding: 4px 8px;
+  margin-right: 6px;
+}
+
+.tag.wip {
+  background: #ffefc7;
+  color: #b58300;
+}
+
+.tag.ros {
+  background: #cdeafe;
+  color: #0074c2;
+}
+
+.tag.robot {
+  background: #e0ffe1;
+  color: #207a3d;
+}
+
+.desc {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.view-button {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+  margin-top: 12px;
+}
+
+.view-button:hover {
+  background-color: #000;
+}
+
+/* ---------- UX DESIGN STYLES FOR PROJECT PAGE ---------- */
+.container-block {
+  background: #ffffff;
+  padding: 32px;
+  margin-bottom: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  border-left: 5px solid #5a8dee;
+  border-top: 2px solid #e4f0ff;
+  position: relative;
+}
+
+.container-block.no-padding {
+  padding: 0;
+  border: none;
+  box-shadow: none;
+}
+
+.container-block:hover {
+  transform: translateY(-2px);
+}
+
+.container-block h2 {
+  font-size: 1.4rem;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #2c3e50;
+}
+
+.container-block p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.8;
+  margin-top: 8px;
+}
+
+.container-block.summary-only {
+  border: none;
+  padding: 0;
+  margin-bottom: 40px;
+  box-shadow: none;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.back-link {
+  font-size: 0.9rem;
+  color: #0074c2;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.hero-img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 12px;
+}
+
+.highlight-box {
+  background: #f9fafa;
+  padding: 32px 0;
+  border-left: 6px solid #4a90e2;
+  border-radius: 24px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  margin: 40px 0;
+  width: 100%;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.highlight-box h2 {
+  margin-bottom: 12px;
+  color: #2a3b5d;
+}
+
+.highlight-box p {
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.two-column {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.two-column > div {
+  flex: 1;
+  min-width: 260px;
+}
+
+.fancy-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.fancy-list li {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 10px;
+  position: relative;
+}
+
+.fancy-list li::before {
+  content: "\2022";
+  color: #4a90e2;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.video-demo {
+  margin-top: 40px;
+  padding: 32px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.video-demo h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #2a2a2a;
+}
+
+.video-demo video {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+footer {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #aaa;
+  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+@media (max-width: 768px) {
+  .two-column {
+    flex-direction: column;
+  }
+
+  .container-block {
+    padding: 20px;
+    border-left-width: 4px;
+    border-radius: 16px;
+  }
+
+  .highlight-box {
+    padding: 20px 0;
+    border-radius: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .video-demo {
+    padding: 20px;
+  }
+
+  .video-demo h2 {
+    font-size: 1.3rem;
+  }
+}

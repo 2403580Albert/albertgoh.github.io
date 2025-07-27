@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🤖 ROS Maze Navigation</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-a4hTdWq7WikzyhUJ7EnY7H06QIP9bVvTEXn9e7D6hjaZ3GbQvHb3+mkEv7uLBfIo1fFZKqfHkUQ9KxICl1ewVg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    .summary-combined {
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      padding: 24px;
+      margin-bottom: 40px;
+      border: 1px solid #ddd;
+    }
+    .summary-combined img {
+      width: 80%;
+      height: auto;
+      border-radius: 12px;
+      display: block;
+      margin: 0 auto 16px;
+    }
+    .summary-combined .summary-divider {
+      border-bottom: 1px solid #ccc;
+      margin: 16px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="hero">
+      <a class="back-link" href="index.html">← Back to Portfolio</a>
+      <h1>🤖 ROS Maze Navigation</h1>
+      <p class="subtitle">Autonomous navigation with LIMO robot using ROS 1 and RTAB-Map</p>
+    </header>
+
+    <div class="summary-combined">
+      <img src="images/Limo-top-AgileX.jpg" alt="LIMO robot" />
+      <div class="summary-divider"></div>
+      <div>
+        <strong>Project Summary:</strong><br />
+        Integrated <strong>RTAB-Map</strong> for SLAM and configured the full navigation stack to enable <strong>reliable path planning in dynamic environments</strong>. The project showcased indoor maze traversal using real-time localization and costmap tuning.
+      </div>
+    </div>
+
+    <div class="container-block two-column highlight-box">
+      <div>
+        <h2>🛠️ <span class="section-title">Tools & Tech</span></h2>
+        <ul class="fancy-list">
+          <li><i class="fa-solid fa-microchip"></i> RTAB-Map SLAM</li>
+          <li><i class="fa-brands fa-ubuntu"></i> ROS 1 Melodic on Ubuntu 18.04</li>
+          <li><i class="fa-solid fa-cube"></i> RViz, Gazebo, Python</li>
+          <li><i class="fa-solid fa-network-wired"></i> Navigation Stack, AMCL, TF</li>
+          <li><i class="fa-solid fa-robot"></i> LIMO Robot</li>
+        </ul>
+      </div>
+      <div>
+        <h2>🧠 <span class="section-title">Key Features</span></h2>
+        <ul class="fancy-list">
+          <li><i class="fa-solid fa-map"></i> SLAM-based map building with RTAB-Map</li>
+          <li><i class="fa-solid fa-route"></i> Costmap tuning for narrow indoor paths</li>
+          <li><i class="fa-solid fa-shield-halved"></i> Reliable navigation in dynamic settings</li>
+          <li><i class="fa-solid fa-link"></i> Custom TF: odom → base_link → laser</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container-block">
+      <h2>🎥 Project Video Demo</h2>
+      <video controls width="100%" style="border-radius: 12px; margin-top: 10px;">
+        <source src="videos/limo-navigation-demo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="container-block">
+      <h2>📌 Outcome</h2>
+      <p>
+        Successfully demonstrated <strong>autonomous maze navigation</strong> using ROS. Fine-tuned localization and motion planning enabled real-time adjustments and reliable obstacle avoidance across a customized Changi Terminal 4-inspired environment.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
